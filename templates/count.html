@@ -1,0 +1,15 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous"
+/>
+<h2 class="display-2">There are {{count}} words in the following</h2>
+
+<h2>{{fulltext}}</h2>
+
+{% for word , counttotal in worddictionary %}
+<br />
+<h4>{{word}}- <small>{{counttotal}}</small></h4>
+<br />
+{% endfor %}

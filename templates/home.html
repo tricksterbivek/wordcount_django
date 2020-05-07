@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+  <body>
+    <h1 class='display-1'>Word Count</h1>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href='./style.css'>
+    <div class='col-xs-2'>
+    <form action="{% url 'count' %}">
+      <textarea class='form-control input-sm-2' name="fulltext" id="text" cols="40" rows="5"></textarea>
+      <br />
+    </div>
+      <button class='btn btn-outline-dark'>Count</button> 
+    
+    </form>
+  </body>
+</html>
